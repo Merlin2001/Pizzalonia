@@ -190,7 +190,7 @@ Now open the `MainWindow.xaml` file: this is the view for the main window. Chang
 
 Here we're taking the `Window.Content` property and binding it to the `CurrentPage` property that we just added to the Window's view model. You'll remember that we set the default value of the `CurrentPage` property to an instance of `MenuViewModel`, and if you run the application now you should see:
 
-![no-menuview](D:\projects\Pizzalonia\doc\no-menuview.png)
+![no-menuview](no-menuview.png)
 
 Quite rightly, we're being told that we haven't created the view for the menu yet, so let's do that now.
 
@@ -212,7 +212,7 @@ Open up the `Views\MenuView.xaml` file and edit it to look like this:
 
 Running the application now will show the following:
 
-![no-pizza-datatemplate](D:\projects\Pizzalonia\doc\no-pizza-datatemplate.png)
+![no-pizza-datatemplate](no-pizza-datatemplate.png)
 
 Progress! We now just need to tell the `ListBox` we just added how to display the pizzas that it's displaying. To do this we'll add an `ItemTemplate`.
 
@@ -232,7 +232,7 @@ An `ItemTemplate` can be thought of as a template that is "stamped out" for each
 
 Here we're assigning a `DataTemplate` to the `ListBox`'s `ItemTemplate` property. The  `DataTemplate` contains a single `TextBlock` control whose `Text` property is bound to the `Name` property on each item. Running the program now shows us that the name of each pizza is displayed:
 
-![menu-pizza-names](D:\projects\Pizzalonia\doc\menu-pizza-names.png)
+![menu-pizza-names](menu-pizza-names.png)
 
 ## Making the Menu look a bit nicer
 
@@ -263,4 +263,4 @@ Here's what's happening here:
 
 Running the application will now give us:
 
-![menu-pizza-image-names](D:\projects\Pizzalonia\doc\menu-pizza-image-names.png)
+![menu-pizza-image-names](menu-pizza-image-names.png)
